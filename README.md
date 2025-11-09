@@ -4,6 +4,7 @@ This repository contains the environment setup, basic CI configuration, and expl
 
 ## Repository Structure
 
+```
 solar-challenge-week0/
 ├─ .github/workflows/ci.yml # GitHub Actions workflow for environment validation
 ├─ data/ # Raw and cleaned datasets (ignored in Git)
@@ -13,6 +14,7 @@ solar-challenge-week0/
 │ └─ togo_eda.ipynb
 ├─ requirements.txt # Python dependencies
 └─ README.md
+```
 
 
 ## Environment Setup
