@@ -1,6 +1,6 @@
 # solar-challenge-week0
 
-This repository contains the environment setup, basic CI configuration, and exploratory data analysis (EDA) notebooks for Week 0 of the Solar Challenge project.
+This repository contains the environment setup, CI configuration, country-specific exploratory data analysis (EDA), and cross-country comparison for Week 0 of the Solar Challenge project.
 
 ## Repository Structure
 
@@ -41,11 +41,16 @@ pip install -r requirements.txt
 
 Open the Jupyter notebooks in VS Code or Jupyter Lab/Notebook:
 
-jupyter notebook notebooks/<country>_eda.ipynb
-Replace <country> with benin, sierraleone, or togo.
+jupyter notebook notebooks/<notebook_name>.ipynb
+<notebook_name> can be: benin_eda, sierraleone_eda, togo_eda, or compare_countries.
 
 ```
 ## Notes
 - The `data/` folder is in `.gitignore` to avoid committing large CSVs.
 - The CI workflow ensures environment reproducibility by installing dependencies on every push.
-- Notebooks include data profiling, cleaning, EDA visualizations, and correlation analysis.
+- Notebooks now include:
+    - Data profiling, missing-value and outlier analysis
+    - Cleaning and preprocessing of datasets
+    - Time series and distribution analysis
+    - Correlation, scatter plots, and wind/temperature insights
+    - Cross-country comparison with summary tables, boxplots, and bar charts
